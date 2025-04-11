@@ -19,10 +19,8 @@ bot.on("message", async (ctx) => {
   const keyboard = {
     reply_markup: {
       inline_keyboard: [
-        [
-          { text: "Create new lead in the CRM", callback_data: "create_lead" },
-          { text: "Skip this", callback_data: "skip" },
-        ],
+        [{ text: "Create new lead in the CRM", callback_data: "create_lead" }],
+        [{ text: "Skip this", callback_data: "skip" }],
       ],
     },
   };
